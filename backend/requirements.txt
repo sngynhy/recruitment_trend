@@ -1,0 +1,49 @@
+# Web Framework
+fastapi==0.115.12
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20       # file upload
+
+# Database
+sqlalchemy==2.0.40
+alembic==1.15.2                # DB migration
+asyncpg==0.30.0                # PostgreSQL async driver (ORM)
+redis==5.2.1                   # Cache / queue
+
+# HTTP Client (job site APIs)
+httpx==0.28.1                  # Async HTTP client
+aiohttp==3.11.16
+
+# Data Processing
+pandas==2.2.3
+numpy==2.2.4
+
+# ML / Pass prediction
+scikit-learn==1.6.1
+xgboost==2.1.4
+lightgbm==4.6.0
+joblib==1.4.2                  # Model serialization
+
+# NLP / Resume parsing
+spacy==3.8.5
+pdfplumber==0.11.6             # Parse PDF resumes
+python-docx==1.1.2             # Parse DOCX resumes
+sentence-transformers==4.1.0   # JD-resume text embeddings
+
+# Task Queue (background analysis)
+celery==5.5.1                  # Async analysis tasks
+flower==2.0.1                  # Celery monitoring
+
+# Validation & Settings
+pydantic==2.11.3               # Schema validation
+pydantic-settings==2.9.1
+
+# Auth
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+
+# Observability
+loguru==0.7.3
+
+# Dev / Test
+pytest==8.3.5
+pytest-asyncio==0.26.0
